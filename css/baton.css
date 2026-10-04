@@ -1,0 +1,59 @@
+#toy .toy-baton img{
+    display: flex;
+    justify-content: center;
+    width: 600px;
+    max-width: 100%;
+    height: 500px;
+    margin: auto;
+    border-radius: 30%;
+}
+
+#toy p {
+    display: flex;
+    justify-content: center;
+    margin: auto;
+    font-size: 2rem;
+    line-height: 2.5em;
+}
+
+#toy-baton .baton{
+    display: flex;
+    justify-content: center;
+    width: 600px;
+    max-width: 100%;
+    height: 400px;
+    margin: auto;
+    border-radius: 30%;
+}
+
+#toy-baton h2,
+#toy-baton p,
+#toy-baton span{
+     display: flex;
+    justify-content: center;
+}
+
+#toy-baton .caution{
+    font-size: 4rem;
+    font-family: 'Times New Roman', Times, serif;
+    color: red;
+}
+
+#toy-baton ol{
+    display: grid;
+    columns: 1;
+    justify-content: center;
+}
+
+#toy-baton  li{
+    text-wrap: nowrap;
+    
+   margin-bottom: 20px;
+}
+
+#toy-baton .not{
+    font-size: 3rem;
+    font-family: 'Times New Roman', Times, serif;
+    color: brown;
+    text-wrap: nowrap;
+}

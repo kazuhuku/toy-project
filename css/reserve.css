@@ -1,0 +1,42 @@
+.title{
+    display: flex;
+    justify-content: center;
+    margin: auto;
+    margin-top: 50px;
+}
+
+#form-blk{
+    display: flex;
+    justify-content: center;
+}
+
+#contact_form{
+    display: grid;
+    columns: 1;
+    margin: 20px auto;
+}
+
+
+
+.box{
+    width: 100%;
+    height: 150px;
+    text-align: center;
+}
+
+input{
+    border: 3px solid black;
+    padding: 10px;
+    width: 100%;
+    max-width: 300px;
+}
+
+.warning{
+    color: red;
+    font-size: 2rem;
+}
+
+.submit{
+    margin: 10px auto;
+    color: blue;
+}

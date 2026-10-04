@@ -1,0 +1,141 @@
+
+#product-image {
+    display: flex;
+    position: relative;
+    width: 600px;
+    max-width: 100%;
+    margin: auto;
+    height: 500px;
+    padding: 20px;
+    right: 340px;
+}
+
+
+.id-blk {
+    position: relative;
+    width: 600px;
+    max-width: 100%;
+    margin: 20px auto;
+    left: 20%;
+    bottom: 500px;
+    height: 600px;
+    border: 3px solid red;
+    background: rgba(255, 255, 255, 0.48);
+}
+
+
+
+
+.id-blk #product-name {
+    position: relative;
+    left: 50px;
+    margin: 30px 100px;
+    color: black;
+}
+
+.id-blk #product-content {
+    position: relative;
+    margin: 40px 0 20px 0;
+}
+
+
+
+#product-price {
+    position: absolute;
+    padding: 30px 0 0;
+    transform: translateX(250px);
+}
+
+
+#product-content {
+    white-space: pre-line;
+
+}
+
+
+#cancel {
+    font-size: 1.8rem;
+    font-family: Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
+    line-height: 3rem;
+    transform: translateY(-400px);
+}
+
+P {
+    display: flex;
+    justify-content: center;
+    color: #0f172a;
+}
+
+#cancel .notes,
+#cancel .notice
+{
+    display: flex;
+    justify-content: center;
+}
+
+#cancel li{
+    display: flex;
+    justify-content: flex-start;
+    position: relative;
+    left: 50px;
+    width: 1000px;
+    max-width: 100%;
+    margin: auto;
+}
+
+
+#cancel .red {
+    text-decoration: underline wavy red;
+
+}
+
+#purchase {
+    width: 1284px;
+    max-width: 100%;
+    margin: auto;
+    position: relative;
+    transform: translateY(-380px);
+}
+
+#purchase .background {
+    position: relative;
+    left: 180px;
+    border-radius: 20px;
+    background: rgba(200, 200, 200, 0.8);
+    width: 75%;
+    padding: 10px;
+    margin: 0 0 20px;
+    max-width: 1000px;
+}
+
+.background::after {
+    content: '';
+    position: relative;
+    top: 58px;
+    left: 45%;
+    border: 25px solid transparent;
+    border-top-color: rgba(200, 200, 200, 0.8);
+}
+
+
+
+
+#purchase p {
+    position: relative;
+    top: 20px;
+    text-align: center;
+    font-size: 26px;
+    color: #166534;
+}
+
+#purchase button {
+    position: relative;
+    width: 200px;
+    max-width: 100%;
+    top: 20px;
+    left: 540px;
+}
+
+#purchase button a {
+    font-size: 2rem;
+}

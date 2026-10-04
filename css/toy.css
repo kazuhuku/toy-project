@@ -1,0 +1,101 @@
+@charset "utf-8";
+
+#menu p{
+    color: #1a1c18;
+    filter: brightness(1.3);
+}
+
+#toy h2{
+    display: flex;
+    justify-content: center;
+    color: #E4405F;
+}
+
+#toy .wrap-blk {
+    width: 100%;
+    height: 900px;
+    border: 10px solid rgba(0, 0, 0, 0.6);
+background: #fff;
+}
+
+#toy .wrap-blk .goods-blk {
+    display: grid;
+    grid-template-columns: repeat(4, 1fr);
+    gap: 30px;
+    margin: 0 auto 30px;
+    border: 10px solid rgba(0, 0, 0, 0.6);
+    background: #fff;
+}
+
+#toy .item {
+    width: 100%;
+    height: 350px;
+    box-sizing: border-box;
+    background: aqua;
+}
+
+
+
+#toy .photo {
+    width: 100%;
+    height: 220px;
+    border: 2px solid #fff;
+}
+
+
+#toy .item-slider{
+    list-style: none;
+    padding: 0;
+    margin: 0;
+}
+
+
+#toy .item h3,
+ .reserve,
+ .price{
+    display: flex;
+    justify-content: center;
+}
+
+
+#toy h3{
+    margin: 0 auto 20px;
+}
+
+
+#toy .reserve{
+    margin: auto;
+    transform: translateY(-20px);
+    color: #e55;
+}
+
+
+#toy .price{
+    
+    margin: auto;
+    transform: translateY(-20px);
+}
+
+
+
+
+
+#Payment h2{
+   text-align: center;
+    padding: 20px 100px;
+}
+
+
+#Payment .Payment {
+    text-align: center;
+}
+
+
+#Payment .caution{
+    text-align: center;
+}
+
+.Payment span,
+.caution span{
+    text-decoration: 3px underline #e55;
+}

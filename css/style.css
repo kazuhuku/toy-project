@@ -1,0 +1,306 @@
+@charset "utf-8";
+
+/* すべての要素に box-sizing を適用 */
+*, *::before, *::after {
+    box-sizing: border-box;
+}
+
+.sp-br{
+    display: none;
+}
+
+html {
+    padding: 0;
+    margin: 0;
+    font-size: 62.5%;
+}
+
+body {
+    padding: 0;
+    margin: 0;
+    font-family: "Exo 2", sans-serif;
+    font-size: 1.7rem;
+    font-weight: 500;
+    line-height: 1.6;
+    width: 100%;
+    background: linear-gradient(rgba(255, 255, 255, 0.5),rgba(255, 255, 255, 0.5)),
+    url(../images/homu-back.png) no-repeat center top / cover;
+    
+}
+
+h1{
+    display: flex;
+    justify-content: center;
+}
+
+p {
+    color: #1a1c18;
+    text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.3);
+}
+
+a {
+    text-decoration: none;
+}
+
+
+header {
+    width: 100%;
+    height: 400px;
+    background: white;
+    box-shadow: 0 6px 3px -3px rgba(0, 0, 0, 0.1);
+}
+
+
+.header-nav {
+    background: url(../images/toy.png) center top no-repeat;
+    width: 100%;
+    max-width: 1900px;
+    height: 400px;
+    padding: 100px;
+    margin: auto;
+}
+
+
+.header-nav ul { 
+     display: flex; 
+     justify-content: space-around;
+     transform: translateY(160px);
+     margin: auto;
+}
+
+.header-nav ul li{ 
+     margin: auto;
+     text-wrap: nowrap;
+}
+
+.header-nav li {
+    list-style: none;
+}
+
+.header-nav .btn a {
+    display: inline-flex;
+    justify-content: center;
+    box-sizing: border-box;
+    width: 100%;
+    border: 5px solid rgba(0, 0, 0, 0.7);
+    border-radius: 20px;
+    padding: 10px;
+    margin: auto;
+    font-size: 26px;
+    background-color: #bbb;
+    transition: 0.5s;
+}
+
+.header-nav .btn a:hover {
+    color: #ff7e5f;
+    background-color: #fff;
+}
+
+.inner {
+    width: 100%;
+    margin: 0 auto;
+    padding: 0 20px;
+}
+
+#title h1,
+.text-content p {
+    display: flex;
+    justify-content: center;
+}
+
+
+
+#title .top{
+    background-image: linear-gradient(90deg, #ff7e5f, #feb47b, #6a11cb, #2575fc);
+    background-size: 200% 200%;
+    -webkit-background-clip: text;
+    background-clip: text;
+    color: transparent;
+
+    /* アニメーション指定 */
+    
+    animation: blinking 2s ease infinite;
+}
+
+
+/* --- キーフレームアニメーションの定義 --- */
+@keyframes blinking{
+    0% {
+        background-position: 0% 50%; /* 開始位置 */
+    }
+    50% {
+        background-position: 100% 50%; /* 途中で右へ移動 */
+    }
+    100% {
+        background-position: 0% 50%; /* 元の位置に戻る */
+    }
+}
+
+.maturi{
+    opacity: 0;
+    transition: 3s;
+}
+
+.maturi.active{
+    opacity: 1;
+}
+
+
+#title .maturi {
+    
+    display: block;         
+    margin: 50px auto;    
+    width: 80%;              
+    height: 450px;            
+    border-radius: 20px;    
+}
+
+
+
+
+
+/* --- アニメーションを適用する要素 --- */
+.gradient-text-animated {
+    /* グラデーション背景を設定 */
+    background-image: linear-gradient(90deg, #ff7e5f, #feb47b, red, #2575fc);
+    
+    /* 背景サイズを大きく広げる（アニメーションで動かすため） */
+    background-size: 200% 200%;
+    
+    /* テキストで型抜きして透明化 */
+    -webkit-background-clip: text;
+    background-clip: text;
+    color: transparent;
+    
+    /* キーフレームアニメーションの呼び出し */
+    /* (名前 時間 イージング 無限ループ) */
+    animation: gradientAnimation 4s ease infinite;
+}
+
+
+
+#menu h2 {
+   text-align: center;
+}
+
+
+
+#menu .wrap-blk {
+    width: 100%;
+    height: 600px;
+    border: 10px solid rgba(0, 0, 0, 0.6);
+background: #fff;
+}
+
+
+#menu .wrap-blk .img-blk {
+    display: flex;
+    justify-content: space-between;
+    height: 500px;
+    margin: 0 auto 30px;
+    border: 10px solid rgba(0, 0, 0, 0.6);
+    background: #fff;
+}
+
+#menu .item {
+    width: 300px;
+    height: 350px;
+    box-sizing: border-box;
+    position: relative;
+    background: aqua;
+
+}
+
+#menu .text {
+    display: flex;
+    justify-content: center;
+    width: 300px;
+    height: 170px;
+    margin: 0 10px 30px 0;
+    position: absolute;
+    transform: translateY(10px);
+    background-color: #bbb;
+    line-height: 24px;
+}
+
+#menu .item h3 {
+    text-align: center;
+}
+
+#menu .item .photo {
+    width: 100%;
+    height: 220px;
+}
+
+
+#osirase .text-content:first-child p:first-of-type{
+    border: 3px solid rgba(0, 0, 0, 0.2);
+    background: rgba(0, 0, 0, 0.2);
+    text-shadow: none;
+    color: #fff;
+    line-height: 30px;
+    padding: 30px;
+    margin: 20px auto;
+}
+
+#osirase h2{
+    font-size: 4rem;
+    color: aqua;
+}
+
+
+
+#osirase h2,
+ .evnt{
+    display: flex;
+    justify-content: center;
+}
+
+#osirase .evnt{
+    font-size: 3rem;
+    color: #E4405F;
+}
+
+#osirase .map a{
+    display: flex;
+    justify-content: center;
+    width: 100%;
+    height: 500px;
+    margin: 30px 0 100px 0;
+}
+
+.map img{
+    border: 3px solid #bbb;
+}
+
+footer .evnt{
+    font-size: 3rem;
+    color: #E4405F;
+    background: #bbb;
+    border: 2px solid #bbb;
+    border-radius: 100px;
+    width: 48%;
+    margin: 20px auto;
+}
+
+
+
+footer ul,
+footer li{
+    display: flex;
+    justify-content: center;
+}
+
+footer li{
+    padding: 20px;
+    margin: 20px;
+}
+
+
+
+
+
+
+
+
+
