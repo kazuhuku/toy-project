@@ -1,0 +1,680 @@
+@charset "utf-8";
+
+/* ========================================
+   スマートフォン用CSS
+   760px以下
+   ======================================== */
+
+@media screen and (max-width: 760px) {
+
+    /* ----------------------------------------
+       共通
+       ---------------------------------------- */
+
+    .inner {
+        width: 100%;
+        padding: 0 15px;
+    }
+
+    .sp-br{
+        display: block;
+    }
+    /* ----------------------------------------
+       ヘッダー・ナビ
+       ---------------------------------------- */
+
+    header {
+        width: 100%;
+        height: auto;
+    }
+
+    .header-nav {
+        width: 100%;
+        height: auto;
+        min-height: 300px;
+        padding: 20px 15px;
+        background-position: center top;
+        background-size: auto;
+    }
+
+    .header-nav ul {
+        display: flex;
+        flex-direction: column;
+        align-items: stretch;
+        justify-content: center;
+        width: 100%;
+        height: auto;
+        margin: 30px auto 0;
+        padding: 0;
+        gap: 10px;
+        transform: none;
+    }
+
+    .header-nav ul li {
+        width: 100%;
+        margin: 0;
+        text-align: center;
+    }
+
+    .header-nav .btn a {
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        width: 100%;
+        min-height: 45px;
+        padding: 8px 10px;
+        margin: 0;
+        border-width: 3px;
+        border-radius: 12px;
+        font-size: 1.5rem;
+        line-height: 1.3;
+    }
+
+
+    /* ----------------------------------------
+       トップ
+       ---------------------------------------- */
+
+    #title h1 {
+        display: block;
+        padding: 10px 5px;
+        text-align: center;
+        font-size: 2.2rem;
+        line-height: 1.4;
+    }
+
+    #title .top {
+        display: inline;
+        font-size: 2.2rem;
+    }
+
+    #title .text-content p {
+        display: block;
+        padding: 10px 5px;
+        margin: 0;
+        font-size: 1.6rem;
+        line-height: 1.8;
+        text-align: left;
+    }
+
+    #title .maturi {
+        width: 100%;
+        height: auto;
+        margin: 25px auto;
+        border-radius: 10px;
+    }
+
+
+    /* ----------------------------------------
+       新商品の案内
+       ---------------------------------------- */
+
+    #menu h2 {
+        font-size: 2.4rem;
+        line-height: 1.4;
+    }
+
+    #menu .text-content{
+        display: block;
+        font-size: 1.6rem;
+    }
+
+    #menu .wrap-blk {
+        width: 100%;
+        height: auto;
+        border-width: 5px;
+    }
+
+    #menu .wrap-blk > h2 {
+        margin: 10px 0 20px;
+    }
+
+    #menu .wrap-blk .img-blk {
+        display: flex;
+        flex-direction: column;
+        justify-content: flex-start;
+        align-items: center;
+        width: 100%;
+        height: auto;
+        margin: 0;
+        padding: 10px;
+        border-width: 5px;
+        gap: 30px;
+    }
+
+    #menu .item {
+        width: 100%;
+        max-width: 350px;
+        height: auto;
+        position: relative;
+    }
+
+    #menu .item .photo {
+        display: block;
+        width: 100%;
+        height: auto;
+        object-fit: contain;
+    }
+
+    #menu .item h3 {
+        margin: 10px 0;
+        font-size: 2rem;
+    }
+
+    #menu .text {
+        display: block;
+        position: static;
+        width: 100%;
+        height: auto;
+        min-height: 0;
+        margin: 0;
+        padding: 10px;
+        transform: none;
+        line-height: 1.7;
+        text-align: left;
+        background-color: #bbb;
+    }
+
+
+    /* ----------------------------------------
+       大切なお知らせ
+       ---------------------------------------- */
+
+    #osirase h2 {
+        font-size: 2.8rem;
+        line-height: 1.4;
+        text-align: center;
+    }
+
+    #osirase .text-content:first-child p:first-of-type {
+        padding: 15px;
+        margin: 15px auto;
+        line-height: 1.8;
+    }
+
+    #osirase .evnt {
+        display: block;
+        font-size: 2.2rem;
+        line-height: 1.5;
+        text-align: center;
+    }
+
+    #osirase .map {
+        width: 100%;
+        height: auto;
+        margin: 20px 0 50px;
+    }
+
+    .map img {
+        display: block;
+        width: 100%;
+        max-width: 100%;
+        height: auto;
+    }
+
+
+/* ----------------------------------------
+   限定商品一覧
+   PC版の4列レイアウト → SPでは2列
+   ---------------------------------------- */
+
+#limited .wrap-blk {
+    width: 100%;
+    height: auto;
+    border-width: 5px;
+    box-sizing: border-box;
+}
+
+#limited .wrap-blk > h2 {
+    margin: 10px 0 20px;
+    font-size: 2.4rem;
+    line-height: 1.4;
+    text-align: center;
+}
+
+#limited .wrap-blk .goods-blk {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    gap: 15px;
+    width: 100%;
+    height: auto;
+    margin: 0 auto 20px;
+    padding: 10px;
+    border-width: 5px;
+    box-sizing: border-box;
+}
+
+#limited .item {
+    width: 100%;
+    height: auto;
+    min-height: 0;
+    box-sizing: border-box;
+}
+
+#limited .photo {
+    display: block;
+    width: 100%;
+    height: auto;
+    border: 2px solid #fff;
+    box-sizing: border-box;
+    object-fit: contain;
+}
+
+
+
+#limited .item h3 {
+    margin: 10px auto;
+    font-size: 1.5rem;
+    line-height: 1.4;
+    text-align: center;
+}
+
+#limited .reserve {
+    margin: 5px auto;
+    font-size: 1.2rem;
+    line-height: 1.4;
+    text-align: center;
+    transform: none;
+}
+
+#limited .price {
+    margin: 5px auto;
+    font-size: 1.4rem;
+    line-height: 1.4;
+    text-align: center;
+    transform: none;
+}
+
+
+/* ----------------------------------------
+   支払い方法
+   ---------------------------------------- */
+
+#Payment h2 {
+    padding: 20px 10px;
+    font-size: 2.2rem;
+    line-height: 1.4;
+    text-align: center;
+}
+
+#Payment{
+    margin: 10px 0 100px 0;
+}
+
+
+#Payment .Payment,
+#Payment .caution {
+    padding: 0 15px;
+    font-size: 1.4rem;
+    line-height: 1.8;
+    text-align: left;
+}
+
+
+
+#Payment .Payment span,
+#Payment .caution span {
+    text-decoration: 2px underline #e55;
+}
+
+
+/* ----------------------------------------
+   通常商品一覧
+   PC版の4列レイアウト → SPでは2列
+   ---------------------------------------- */
+#toy .wrap-blk {
+    width: 100%;
+    height: auto;
+    border-width: 5px;
+    box-sizing: border-box;
+}
+
+#toy .wrap-blk > h2 {
+    margin: 10px 0 20px;
+    font-size: 2.4rem;
+    line-height: 1.4;
+    text-align: center;
+}
+
+#toy .wrap-blk .goods-blk {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    gap: 15px;
+    width: 100%;
+    height: auto;
+    margin: 0 auto 20px;
+    padding: 10px;
+    border-width: 5px;
+    box-sizing: border-box;
+}
+
+#toy .item {
+    width: 100%;
+    height: auto;
+    min-height: 0;
+    box-sizing: border-box;
+}
+
+#toy .photo {
+    display: block;
+    width: 100%;
+    height: auto;
+    border: 2px solid #fff;
+    box-sizing: border-box;
+    object-fit: contain;
+}
+
+
+
+#toy .item h3 {
+    margin: 10px auto;
+    font-size: 1.5rem;
+    line-height: 1.4;
+    text-align: center;
+}
+
+#toy .reserve {
+    margin: 5px auto;
+    font-size: 1.2rem;
+    line-height: 1.4;
+    text-align: center;
+    transform: none;
+}
+
+#toy .price {
+    margin: 5px auto;
+    font-size: 1.4rem;
+    line-height: 1.4;
+    text-align: center;
+    transform: none;
+}
+
+
+/* ----------------------------------------
+       修理依頼ページ
+       ---------------------------------------- */
+
+    #repair .repair-wrap {
+        width: 100%;
+        height: 360px;
+        margin: 20px auto 40px;
+        position: relative;
+    }
+
+    #repair .repair-img {
+        display: block;
+        width: 100%;
+        height: 350px;
+        margin: 0 auto;
+        border-radius: 5%;
+    }
+
+    #repair .staff {
+        position: static;
+        width: 90%;
+        height: auto;
+        min-height: 0;
+        margin: auto 15px;
+        padding: 20px 15px;
+        border-radius: 30px;
+        box-sizing: border-box;
+        background-color: rgba(200, 200, 255, 0.8);
+        transform: translateY(-180px);
+    }
+
+    #repair .staff p {
+        width: 100%;
+        height: auto;
+        min-height: 0;
+        margin: 0;
+        display: block;
+        font-size: 1.4rem;
+        line-height: 2;
+        text-align: center;
+    }
+
+    #repair h2 {
+        display: block;
+        margin: 30px 0 20px;
+        font-size: 2.2rem;
+        line-height: 1.5;
+        text-align: center;
+    }
+
+    #repair .refusal {
+        display: block;
+        width: 100%;
+        margin: 0 auto;
+        padding: 0 10px;
+        box-sizing: border-box;
+        font-size: 1.4rem;
+        line-height: 2;
+        text-align: left;
+    }
+
+    #repair .refusal p {
+        margin: 0;
+    }
+
+    /* ----------------------------------------
+       注意事項
+       ---------------------------------------- */
+
+    #select {
+        width: 100%;
+        margin: 0 auto;
+        padding-bottom: 50px;
+        box-sizing: border-box;
+    }
+
+    #select h1 {
+        margin: 30px 0 20px;
+        font-size: 2.8rem;
+        line-height: 1.4;
+        text-align: center;
+    }
+
+    #select p {
+        display: block;
+        width: 100%;
+        margin: 0 auto 20px;
+        padding: 0 15px;
+        box-sizing: border-box;
+        font-size: 1.4rem;
+        line-height: 2;
+        text-align: left;
+    }
+
+    #select button {
+        display: block;
+        width: 90%;
+        margin: 20px auto 30px;
+        padding: 12px 10px;
+        box-sizing: border-box;
+        font-size: 1.4rem;
+        text-align: center;
+        transform: translateY(-10px);
+    }
+
+    #select button a {
+        display: block;
+        width: 100%;
+        text-decoration: none;
+    }
+
+    #select h2 {
+        display: block;
+        margin: 30px 0 20px;
+        padding: 0 15px;
+        font-size: 2.2rem;
+        line-height: 1.5;
+        text-align: center;
+    }
+
+    #select ul {
+        width: 100%;
+        margin: 0 auto;
+        padding: 0 20px 0 35px;
+        box-sizing: border-box;
+    }
+
+    #select ul li {
+        display: list-item;
+        width: 100%;
+        margin: 0 0 15px;
+        padding: 0;
+        font-size: 1.3rem;
+        line-height: 1.8;
+        text-align: left;
+        box-sizing: border-box;
+    }
+
+/* slick部分 */
+
+#toy h1 {
+    font-size: 3rem;
+}
+
+#toy .toy-baton img{ 
+    width: 300px;
+    height: 250px;
+}
+
+#toy p {
+    line-height: 1.7em;
+}
+
+#toy-baton .baton{
+    height: 280px;
+}
+
+
+
+#toy-baton .caution {
+    font-size: 2.8rem;
+}
+
+    #toy-baton ol {
+        display: block;
+        text-align: start;
+    }
+
+
+    #toy-baton .not {
+        height: 100px;
+        margin: 0 auto 100px;
+        font-size: 2rem;
+        text-wrap: auto;
+    }
+
+/* 販売ページ */
+#product-image {
+    display: block;
+    justify-content: center;
+    position: static;
+    width: 100%;
+    max-width: 500px;
+    height: auto;
+}
+
+.id-blk {
+    position: static;
+    width: 340px;
+}
+
+.id-blk #product-name {
+    font-size: 1.8rem;
+    text-align: start;
+    margin: auto;
+    text-wrap: wrap;
+    left: 1.1rem;
+}
+
+.id-blk #product-content {
+    text-wrap: auto;
+}
+
+#product-price {
+    transform: translateX(100px);
+}
+
+
+
+#cancel {
+    transform: none;
+    font-size: 1.5rem
+}
+
+#cancel strong {
+    display: block;
+    font-size: 1.8rem;
+    margin: auto 50px;
+}
+
+#cancel li {
+    display: block;
+    left: 0;
+    right: 100px;
+}
+
+#cancel ol {
+    display: block;
+}
+
+#purchase {
+    transform: none;
+    height: 600px;
+}
+
+#purchase .background {
+    left: 50px;
+
+}
+
+#purchase p {
+    font-size: 2rem;
+}
+
+#purchase button {
+    left: 110px;
+}
+
+.submit {
+    height: 300px;
+}
+
+
+
+
+    /* ----------------------------------------
+       フッター
+       ---------------------------------------- */
+
+    footer .evnt {
+        display: block;
+        width: 100%;
+        padding: 10px;
+        font-size: 3rem;
+        line-height: 1.5;
+        text-align: center;
+    }
+
+    footer .text-content p {
+        padding: 10px 5px;
+        font-size: 1.5rem;
+        line-height: 1.8;
+        margin: 50px 0 100px 0;
+    }
+
+    footer ul,
+    footer li {
+        display: block;
+        text-align: center;
+        line-height: 1.2;
+        padding: 10px;
+        margin: auto;
+        transform: translateY(-50px);
+    }
+
+
+}
